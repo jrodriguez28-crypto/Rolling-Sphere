@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // basic variable defining 
-    public float speed;
+    public float moveSpeed;
     // defining the inputs
     private float verticalInput;
     private float horizontalInput;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
 
         // movement for the ball
-        transform.Translate(Vector3.forward * verticalInput * speed);
-        transform.Translate(Vector3.right * horizontalInput * speed);
+        transform.Translate(Vector3.forward * verticalInput * moveSpeed);
+        transform.Translate(Vector3.right * horizontalInput * moveSpeed);
     }
 }
