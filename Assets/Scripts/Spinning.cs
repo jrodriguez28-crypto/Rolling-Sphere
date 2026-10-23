@@ -24,7 +24,7 @@ public class Spinning : MonoBehaviour
         Debug.Log(other.gameObject.name);
         if(other.gameObject.name == "Player")
         {
-            other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.forward * 50);
+            other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.forward * 1000);
         }
 
     }
